@@ -21,15 +21,22 @@
 
         h1 {
             margin-bottom: 0;
+
+            a {
+                text-decoration: none;
+
+                &:hover, &:active {
+                    text-decoration: underline;
+                }
+            }
         }
 
         a {
             color: var(--text-color);
-            text-decoration: none;
+        }
 
-            &:hover, &:active {
-                text-decoration: underline;
-            }
+        li:not(:last-of-type) {
+            padding-bottom: 0.25em;
         }
 
         .container {

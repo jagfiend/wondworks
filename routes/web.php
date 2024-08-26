@@ -10,4 +10,4 @@ Route::get('/', HomeController::class)->name('home');
 Route::get('/posts/{post}', ShowController::class)->name('posts.show');
 
 // things
-Route::get('/doodler', fn () => view('things.doodler'))->name('doodler');
+Route::get('/doodler', fn () => view('things.doodler', ['title' => 'Doodler']))->name('doodler');

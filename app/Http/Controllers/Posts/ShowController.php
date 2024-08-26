@@ -14,6 +14,8 @@ final class ShowController extends Controller
     {
         abort_if(! $post->date_published, 404);
 
-        return view('posts.show', compact('post'));
+        $title = $post->title;
+
+        return view('posts.show', compact('title', 'post'));
     }
 }
