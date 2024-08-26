@@ -10,7 +10,7 @@ use Illuminate\Database\Eloquent\SoftDeletes;
 use Illuminate\Support\Str;
 
 /**
- *
+ * 
  *
  * @property int $id
  * @property string $title
@@ -34,6 +34,7 @@ use Illuminate\Support\Str;
  * @method static \Illuminate\Database\Eloquent\Builder|Post whereUpdatedAt($value)
  * @method static \Illuminate\Database\Eloquent\Builder|Post withTrashed()
  * @method static \Illuminate\Database\Eloquent\Builder|Post withoutTrashed()
+ * @property-read mixed $display_content
  * @mixin \Eloquent
  */
 final class Post extends Model
