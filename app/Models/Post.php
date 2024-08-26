@@ -49,12 +49,7 @@ final class Post extends Model
     protected $casts = [
         'date_published' => 'datetime',
     ];
-
-    public function displayId(): Attribute
-    {
-        return new Attribute(fn () => Str::padLeft($this->id, 3, '0'));
-    }
-
+    
     public function displayDatePublished(): Attribute
     {
         return new Attribute(fn () => $this->date_published ? $this->date_published->format('d/m/Y') : '');
